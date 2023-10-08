@@ -25,11 +25,11 @@ jobs:
           aws-access-key-id: AWS_ACCESS_KEY_ID
           aws-region: AWS_DEFAULT_REGION
           aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-      - run: aws cloudformation deploy --template-file cloudformation/lecture-vpc.yml --stack-name cfn-lecture-vpc
-      - run: aws cloudformation deploy --template-file cloudformation/lecture-ec2.yml --stack-name cfn-lecture-ec2 --capabilities CAPABILITY_IAM
-      - run: aws cloudformation deploy --template-file cloudformation/lecture-rds.yml --stack-name cfn-lecture-rds --parameter-overrides DBPassword="${AWS_DB_PW}"
-      - run: aws cloudformation deploy --template-file cloudformation/lecture-alb.yml --stack-name cfn-lecture-elb
-      - run: aws cloudformation deploy --template-file cloudformation/lecture-s3.yml --stack-name cfn-lecture-s3
+      - run: aws cloudformation deploy --template-file cloudformation/lecture-vpc.yml --stack-name pf-001-vpc
+      - run: aws cloudformation deploy --template-file cloudformation/lecture-ec2.yml --stack-name pf-001-ec2 --capabilities CAPABILITY_IAM
+      - run: aws cloudformation deploy --template-file cloudformation/lecture-rds.yml --stack-name pf-001-rds --parameter-overrides DBPassword="${AWS_DB_PW}"
+      - run: aws cloudformation deploy --template-file cloudformation/lecture-alb.yml --stack-name pf-001-elb
+      - run: aws cloudformation deploy --template-file cloudformation/lecture-s3.yml --stack-name pf-001-s3
 
   ansible-execute:
     executor: ansible/default

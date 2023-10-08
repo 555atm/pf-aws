@@ -1,10 +1,10 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: Cfn-lecture template for EC2
+Description: pf-001 template for EC2
 
 Parameters:
   Project:
     Type: String
-    Default: cfn-lecture
+    Default: pf-001
   VPCStackName:
     Type: String
     Default: cfn-lecture-vpc
