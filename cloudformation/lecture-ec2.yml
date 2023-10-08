@@ -7,7 +7,7 @@ Parameters:
     Default: pf-001
   VPCStackName:
     Type: String
-    Default: cfn-lecture-vpc
+    Default: pf-001-vpc
   EC2AMI:
     Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
     Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
@@ -85,10 +85,8 @@ Resources:
         - Effect: Allow
           Action: "*"
           Resource:
-            - "arn:aws:s3:::cfn-lecture-s3"
-            - "arn:aws:s3:::cfn-lecture-s3/*"
-            # - !Sub "arn:aws:s3:::${cfn-lecture}-s3"
-            # - !Sub "arn:aws:s3:::${cfn-lecture}-s3/*"
+            - "arn:aws:s3:::pf-001-s3"
+            - "arn:aws:s3:::pf-001-s3/*"
       Roles:
       - !Ref S3AccessRole
   # EC2インスタンスとロールを紐づけるために、IAMインスタンスプロファイルを使う
