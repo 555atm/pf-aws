@@ -49,6 +49,7 @@ jobs:
           playbook-options: "-i ansible/inventory"
           # playbook-options: '-u ec2-user -i ansible/inventory --private-key ../../keypair/CFnKeyPair.pem'
 
+
   serverspec-execute:
     docker:
       - image: cimg/ruby:2.7-node
