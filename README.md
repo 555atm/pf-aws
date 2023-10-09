@@ -30,6 +30,21 @@
 ##### 構成図
 ![diagram.png](./images/diagram.png)
 
+
+- circleの全タスクが正常終了
+![circleci-all-tasks.png](./images/circleci-all-tasks.png)
+
+
+- バケットに保存されていることを確認
+![new-fruits-result.png](./images/new-fruits-result.png)
+
+![s3bucket.png](./images/s3bucket.png)
+
+- RDS内に投稿内容が保存されていることの確認
+![rds-mysql-select.png](./images/rds-mysql-select.png)
+
+
+
 #### ソースコード
 
 .circleci/config/yml

@@ -37,7 +37,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - 8f:32:ac:33:c9:3f:0a:05:7d:f9:c1:f2:d8:ac:79:42
+            - 3a:2b:6a:10:5c:a9:9b:bf:2b:b2:3d:05:0e:aa:41:44
 
       - run:
           name: Copy SSH Config

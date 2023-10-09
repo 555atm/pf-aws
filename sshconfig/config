@@ -1,5 +1,5 @@
 Host pf-001-web
-  HostName 52.195.218.14
+  HostName 35.77.99.221
   Port 22
   User ec2-user
   StrictHostKeyChecking no
