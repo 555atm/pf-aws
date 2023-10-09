@@ -74,7 +74,7 @@ jobs:
             bundle exec rake spec
 
 workflows:
-  workflow-01:
+  pf-001:
     jobs:
       - cfn-lint
       - cfn-execute:
