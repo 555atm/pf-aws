@@ -37,7 +37,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - 0f:d8:ae:47:5e:80:6c:35:9e:70:2e:2c:28:fe:a4:29
+            - 8f:32:ac:33:c9:3f:0a:05:7d:f9:c1:f2:d8:ac:79:42
 
       - run:
           name: Copy SSH Config
@@ -74,7 +74,7 @@ jobs:
             bundle exec rake spec
 
 workflows:
-  raisetech:
+  workflow-01:
     jobs:
       - cfn-lint
       - cfn-execute:
