@@ -1,6 +1,5 @@
 # pf-aws
-portforio of aws learning
-クラウド関連の業務経験は無いため、
+クラウド関連の業務経験が無いので、
 それを補うため以下の学習を行いました。
 
 ## AWS座学
@@ -8,36 +7,35 @@ portforio of aws learning
 
 ## AWS実技
 
-### ①　マネージメントコンソールで以下構成を作成
+### 1.　マネージメントコンソールから以下構成を作成
 
-[図]
-VPC
-ALB
-EC2（nginx + unicorn + Rails）
-RDS(mysql)
-S3(webアプリ上の画像を保存)
+- マネージメントコンソールからAWSリソース（VPC, ALB, EC2, RDS, S3, IAM）を作成
+- EC2にアプリサーバ環境構築　（Rails + Nginx + Unicorn + mysql）
 
-### ②　CloudFormationについて学習
-- 上記構成をCloudFormationで作成
-（図は載せない）
+##### 構成図
+![diagram-management-console.png](./images/diagram-management-console.png)
 
-### ③　circlciからcloudformaiton,Ancibleを使ってWEBアプリが動かす
+### 2.　CloudFormationについて学習
+- CloudFormationテンプレートから上記AWSリソース（VPC, ALB, EC2, RDS, S3, IAM）を自動作成
 
-GitHubにpushを行うとcircleciが以下を実行
+### 3.　circlciからcloudformaiton,Ancibleを使ってWEBアプリが動かす
+- circleci、Ansibleを学習し、以下のものを作成しました。
 
-　① CloudFormationでAWSリソース( VPC, ALB, EC2, RDS, S3, IAM ) を作成
-　② AnsibleでWEBアプリサーバ環境構築 ＋ ソースコードをデプロイ
-　③ ServerspecでWEBページ表示テスト
+  - GitHubにpushを行うだけでcircleciが以下を自動実行
 
-#### 構成図
+    1. CloudFormationでAWSリソース( VPC, ALB, EC2, RDS, S3, IAM ) を作成
+    2. AnsibleでWEBアプリサーバ環境構築 ＋ ソースコードをデプロイ
+    3. ServerspecでWEBページ表示テスト
+
+##### 構成図
 ![diagram.png](./images/diagram.png)
 
 #### ソースコード
+
 .circleci/config/yml
-cloudformation
+cloudformationテンプレート
 ansible
 sshconfig
-rails
 
 
 ## 今後の学習予定
