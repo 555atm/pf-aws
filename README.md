@@ -18,7 +18,7 @@
 ### 2.　CloudFormationについて学習
 - CloudFormationテンプレートから上記AWSリソース（VPC, ALB, EC2, RDS, S3, IAM）を自動作成
 
-### 3.　circlciからcloudformaiton,Ancibleを使ってWEBアプリが動かす
+### 3.　circleciからCloudFormaiton,Ancibleを使ってWEBアプリが動かす
 - circleci、Ansibleを学習し、以下のものを作成しました。
 
   - GitHubにpushを行うだけでcircleciが以下を自動実行
@@ -30,18 +30,16 @@
 ##### 構成図
 ![diagram.png](./images/diagram.png)
 
-
 - circleの全タスクが正常終了
 ![circleci-all-tasks.png](./images/circleci-all-tasks.png)
 
-
-- バケットに保存されていることを確認
+- 新規投稿した結果
 ![new-fruits-result.png](./images/new-fruits-result.png)
 
+
+- バケットに画像が保存されていることを確認
 ![s3bucket.png](./images/s3bucket.png)
 
-- RDS内に投稿内容が保存されていることの確認
-![rds-mysql-select.png](./images/rds-mysql-select.png)
 
 
 
