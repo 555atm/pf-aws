@@ -63,11 +63,11 @@ sshconfig
 
 
 - 資格
-  - SAP　(Solutions Architect - Professional)
-  - SOA  (SysOps Administrator Associate)
-  - DVA  (Developer Associate)
-  - SCS(AWS セキュリティ)
-  - ANS（Advanced Networking - Specialty）
+  - SAP (Solutions Architect - Professional)
+  - SOA (SysOps Administrator Associate)
+  - DVA (Developer Associate)
+  - SCS (AWS セキュリティ)
+  - ANS （Advanced Networking - Specialty）
   - 応用情報処理
   - 情報安全確保支援士
 
