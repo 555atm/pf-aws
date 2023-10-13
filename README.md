@@ -51,14 +51,14 @@ ansible
 sshconfig
 
 
-## 今後の学習予定
-- 実技
+## 今後の学習したいもの
+- 以下機能の実装
   - Auto Scaling　（とりあえず動かしたが実務レベルの設計はまだ）
-  - teraform
-  - SNS+SQS
-  - ECS,EKS
-  - 監視・運用関連
-  - 複雑なシェルスクリプト
+  - SNS,SQS, API Gateway、Lambda関数
+  - TerraForm
+  - 複雑なシェルスクリプト、
+  - コンテナ技術（ECS,EKS,Kubernetes)
+  - 監視・運用関連の技術
   - などなど
 
 
@@ -66,9 +66,10 @@ sshconfig
   - SAP　(Solutions Architect - Professional)
   - SOA  (SysOps Administrator Associate)
   - DVA  (Developer Associate)
-  - セキュリティ
-  - NW
-  - 応用情報
+  - SCS(セキュリティ)
+  - ANS（ネットワーク）
+  - 応用情報処理
+  - 情報安全確保支援士
 
 - その他
   - AWSの設計関連書籍を読む
