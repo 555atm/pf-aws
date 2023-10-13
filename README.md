@@ -53,12 +53,12 @@ sshconfig
 
 ## 今後の学習予定
 - 実技
-  - teraform
   - Auto Scaling
+  - teraform
   - SNS+SQS
   - ECS,EKS
   - 監視・運用関連
-  - （（　複雑なシェルスクリプト　））
+  - 複雑なシェルスクリプト
   - などなど
 
 
