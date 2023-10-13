@@ -53,7 +53,7 @@ sshconfig
 
 ## 今後の学習予定
 - 実技
-  - Auto Scaling
+  - Auto Scaling　（とりあえず動かしたが実務レベルの設計はまだ）
   - teraform
   - SNS+SQS
   - ECS,EKS
