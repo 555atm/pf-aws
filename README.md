@@ -24,8 +24,16 @@
   - GitHubにpushを行うだけでcircleciが以下を自動実行
 
     1. CloudFormationでAWSリソース( VPC, ALB, EC2, RDS, S3, IAM ) を作成
-    2. AnsibleでWEBアプリサーバ環境構築 ＋ ソースコードをデプロイ
-    3. ServerspecでWEBページ表示テスト
+      - CloudFormationテンプレートに対してgitからのpush時にリンターツールでYAMLの構文チェックも実施。エラーになったら中止。
+      - 作成順: VPC →セキュリティグループ →EC2 →RDS →ALB →RDS →ALB →S3の順序で作成
+    2. Ansibleのplaybookに基づき、WEB・APサーバの環境構築 ＋ ソースコードをデプロイ
+      - playbookのroleの処理順序は以下の通り
+        - yum > ruby > bundler > rails >node > yarn > railsコードデプロイ > mysql > DBマイグレーション > nginx > unicorn >
+    3. Serverspecで動作環境チェックおよびWEBページ表示テスト
+      - インストールチェック・バージョンチェック（ruby,bundler,rails,node,yarn,mysql,nginx,unicorn）
+      - サービスチェック（nginx,unicorn）
+      - HTTPステータスチェック（200 OK）k
+
 
 ##### 構成図
 ![diagram.png](./images/diagram.png)
@@ -51,7 +59,7 @@ ansible
 sshconfig
 
 
-## 今後の学習したいもの
+## 今後学習したいもの
 - 以下機能の実装
   - Auto Scaling　（とりあえず動かしたが実務レベルの設計はまだ）
   - SNS,SQS, API Gateway、Lambda関数
