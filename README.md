@@ -10,7 +10,8 @@
 ### 1.　マネージメントコンソールから以下構成を作成
 
 - マネージメントコンソールからAWSリソース（VPC, ALB, EC2, RDS, S3, IAM）を作成
-- EC2にアプリサーバ環境構築　（Rails + Nginx + Unicorn + mysql）
+- EC2にWEB/AP/DBサーバ環境構築　（Rails + Nginx + Unicorn + mysql）
+  - Railsアプリは簡単なCRADを行うだけのものです。（投稿画像はS3に保存されます）   
 
 ##### 構成図
 ![diagram-management-console.png](./images/diagram-management-console.png)
