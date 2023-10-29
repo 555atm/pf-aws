@@ -34,7 +34,6 @@
       - サービスチェック（nginx,unicorn）
       - HTTPステータスチェック（200 OK）k
 
-
 ##### 構成図
 ![diagram.png](./images/diagram.png)
 
