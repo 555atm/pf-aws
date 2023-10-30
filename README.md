@@ -52,7 +52,8 @@
 #### 構成図
 ![diagram.png](./images/diagram.png)
 
-- circleの全タスクが正常終了
+#### 動作後画面
+- circleciの全タスクが正常終了
 ![circleci-all-tasks.png](./images/circleci-all-tasks.png)
 
 - 新規投稿した結果
