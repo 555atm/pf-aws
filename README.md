@@ -12,6 +12,8 @@
 - マネージメントコンソールからAWSリソース（VPC, ALB, EC2, RDS, S3, IAM）を作成
 - EC2にWEB/AP/DBサーバ環境構築　（Rails + Nginx + Unicorn + mysql）
   - Railsアプリは簡単なCRADを行うだけのものです。（投稿画像はS3に保存されます）   
+- 追加で実施
+  - Auto Scaling （当然AMI作成、起動テンプレート作成含む）
 
 ##### 構成図
 ![diagram-management-console.png](./images/diagram-management-console.png)
@@ -72,7 +74,6 @@ sshconfig
 
 ## 今後学習したいもの
 - 以下機能の実装
-  - Auto Scaling　（とりあえず動かしたが実務レベルの設計はまだ）
   - SNS,SQS, API Gateway、Lambda関数
   - TerraForm
   - 複雑なシェルスクリプト、
