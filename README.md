@@ -27,13 +27,21 @@
     1. CloudFormationでAWSリソース( VPC, ALB, EC2, RDS, S3, IAM ) を作成
       - CloudFormationテンプレートに対してgitからのpush時にリンターツールでYAMLの構文チェックも実施。エラーになったら中止。
       - 作成順: VPC →セキュリティグループ →EC2 →RDS →ALB →RDS →ALB →S3の順序で作成
-    2. Ansibleのplaybookに基づき、WEB・APサーバの環境構築 ＋ ソースコードをデプロイ
+    2. Ansibleのplaybookに基づき、WEB・APサーバの環境構築 ＋ WEBアプリのソースコードをデプロイ
       - playbookのroleの処理順序は以下の通り
         - yum > ruby > bundler > rails >node > yarn > railsコードデプロイ > mysql > DBマイグレーション > nginx > unicorn >
     3. Serverspecで動作環境チェックおよびWEBページ表示テスト
       - インストールチェック・バージョンチェック（ruby,bundler,rails,node,yarn,mysql,nginx,unicorn）
       - サービスチェック（nginx,unicorn）
       - HTTPステータスチェック（200 OK）k
+
+- 動作環境
+- ruby3.1.2
+- bundler2.3.14
+- Rails 7.0.4
+- Node 16.19.1
+- yarn 1.22.19
+- DB: MySQL
 
 ##### 構成図
 ![diagram.png](./images/diagram.png)
