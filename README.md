@@ -35,7 +35,7 @@
       - サービスチェック（nginx,unicorn）
       - HTTPステータスチェック（200 OK）k
 
-- 動作環境
+#### 動作環境
 - ruby3.1.2
 - bundler2.3.14
 - Rails 7.0.4
@@ -43,7 +43,11 @@
 - yarn 1.22.19
 - DB: MySQL
 
-##### 構成図
+#### circleci環境変数
+![circleci-env.jpg](./images/circleci-env.jpg)
+
+
+#### 構成図
 ![diagram.png](./images/diagram.png)
 
 - circleの全タスクが正常終了
@@ -55,7 +59,6 @@
 
 - バケットに画像が保存されていることを確認
 ![s3bucket.png](./images/s3bucket.png)
-
 
 
 
