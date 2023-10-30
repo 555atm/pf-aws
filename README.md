@@ -33,10 +33,10 @@
     2. Ansibleのplaybookに基づき、WEB・APサーバの環境構築 ＋ WEBアプリのソースコードをデプロイ
       - playbookのroleの処理順序は以下の通り
         - yum > ruby > bundler > rails >node > yarn > railsコードデプロイ > mysql > DBマイグレーション > nginx > unicorn >
-    3. Serverspecで動作環境チェックおよびWEBページ表示テスト
-      - インストールチェック・バージョンチェック（ruby,bundler,rails,node,yarn,mysql,nginx,unicorn）
-      - サービスチェック（nginx,unicorn）
-      - HTTPステータスチェック（200 OK）k
+    3. Serverspecで動作環境チェックおよびWEBページ表示チェック
+      - インストールチェック・バージョンチェック（ruby,bundler,rails,node,yarn,mysql,nginx,unicornがインストールされているか、バージョンは指定どおりか）
+      - サービスチェック（nginx,unicornが起動しているか）
+      - HTTPステータスチェック（正常 つまり200 OKが返ってくるか）
 
 #### 動作環境
 - ruby3.1.2
