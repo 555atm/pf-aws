@@ -6,7 +6,18 @@
 - 以下サービス（＝ビルドアップ）に毎日学習時間を記載
   - https://app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQMykTMgoTd
 
+#### AWS学習時間の概要
 ![buildup.png](./images/buildup.png)
+- 合計650時間
+  - SAA対策＋自分用ノート作成が最長
+  - AWS実技　＝　VPC、IAM,EC2,S3,RDS,ALBといったWEB３層モデルのAWSサービス + nginx +unicorn + rails、AWSコスト管理、AWSセキュリティ
+  - いち技術としてはAnsibleが一番時間がかかった
+  - その他
+    - テスト自動化（serverspec）、CI/CD(circleci) 
+    - git/githubの使い方、マークダウン(.md)の書き方、Linuxコマンド復習
+    - 等
+  - ※転職活動（企業ピックアップ、企業研究）の時間は含めていません
+  - ※学友とgatherで情報共有していた時間も勿論含めていません
 
 
 ## AWS座学
