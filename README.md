@@ -2,6 +2,10 @@
 クラウド関連の業務経験が無いので
 それを補うため以下の学習を行いました
 
+## 学習時間の記録
+- 以下サービス（＝ビルドアップ）に毎日学習時間を記載
+  - https://app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQMykTMgoTd
+
 ## AWS座学
 - 2023年9月にSAAを取得
   - 自分用ノートも作成
