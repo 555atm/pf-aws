@@ -6,6 +6,9 @@
 - 以下サービス（＝ビルドアップ）に毎日学習時間を記載
   - https://app.build-up.info/enterprises/bEDI6AXZ/portfolio/bQMykTMgoTd
 
+![buildup.png](./images/buildup.png)
+
+
 ## AWS座学
 - 2023年9月にSAAを取得
   - 自分用ノートも作成
