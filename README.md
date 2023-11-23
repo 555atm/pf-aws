@@ -100,8 +100,8 @@ sshconfig
 ## 今後学習したいもの
 - 以下機能の実装
   - SNS,SQS, API Gateway、Lambda関数
-  - TerraForm
-  - 複雑なシェルスクリプト、
+  - TerraForm（学習中）
+  - 複雑なシェルスクリプト
   - コンテナ技術（ECS,EKS,Kubernetes)
   - 監視・運用関連の技術
   - などなど
