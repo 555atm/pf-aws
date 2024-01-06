@@ -7,6 +7,7 @@ server {
   # server_name _;
   root /var/www/raisetech-live8-sample-app/public;
 
+  # 名前付きロケーションでunicornを指定
   location @unicorn {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header Host $http_host;
