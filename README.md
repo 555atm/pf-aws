@@ -70,8 +70,7 @@
 - DB: MySQL
 
 #### circleci環境変数
-![circleci-env.jpg](./images/circleci-env.jpg)
-
+![circleci-env.png](./images/circleci-env.png)
 
 #### 構成図
 ![diagram.png](./images/diagram.png)
