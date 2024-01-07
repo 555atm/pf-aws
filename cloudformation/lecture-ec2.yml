@@ -85,8 +85,8 @@ Resources:
         - Effect: Allow
           Action: "*"
           Resource:
-            - "arn:aws:s3:::pf-001-s3"
-            - "arn:aws:s3:::pf-001-s3/*"
+            - "arn:aws:s3:::pf-001-s3_01"
+            - "arn:aws:s3:::pf-001-s3_01/*"
       Roles:
       - !Ref S3AccessRole
   # EC2インスタンスとロールを紐づけるために、IAMインスタンスプロファイルを使う
