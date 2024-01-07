@@ -13,7 +13,7 @@ Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: !Sub ${Project}-s3_01
+      BucketName: !Sub ${Project}-s3-01
 # AWS リージョン
       OwnershipControls:
         Rules:
