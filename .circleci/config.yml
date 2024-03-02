@@ -38,7 +38,8 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             # - 3a:2b:6a:10:5c:a9:9b:bf:2b:b2:3d:05:0e:aa:41:44
-            - SHA256:5CauKwRAabFGiS6jRGnnT8Snhkb2U81eB2ejfDfXuzc
+            # - SHA256:5CauKwRAabFGiS6jRGnnT8Snhkb2U81eB2ejfDfXuzc
+            - SHA256:XQDxb2jDYbf0z+F1AA4KVnID0iu5g7z6Ob+sD/9RxJ4
 
       - run:
           name: Copy SSH Config
